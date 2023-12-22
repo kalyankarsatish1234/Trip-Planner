@@ -1,0 +1,204 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Planner - Home</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            display: none;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .destination,
+        .offer,
+        .testimonial,
+        .blog-post {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // jQuery code for fade-in animation
+        $(document).ready(function() {
+            $('body').fadeIn(1000);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Your Trip Planner</h1>
+        <p>Plan your perfect trip with us!</p>
+    </header>
+
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Your Trip Planner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flights.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trains.html">Trains</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>Welcome to Your Trip Planner</h2>
+        <p>Start planning your dream vacation now!</p>
+    </section>
+
+    <section class="container">
+        <h2>Featured Destinations</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="destination">
+                    <img src="destination1.jpg" alt="Destination 1" class="img-fluid">
+                    <p><a href="#" class="btn btn-primary">Explore Destination 1</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="destination">
+                    <img src="destination2.jpg" alt="Destination 2" class="img-fluid">
+                    <p><a href="#" class="btn btn-primary">Explore Destination 2</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more destinations as needed -->
+    </section>
+
+    <section class="container">
+        <h2>Special Offers</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="offer">
+                    <img src="offer1.jpg" alt="Special Offer 1" class="img-fluid">
+                    <p><a href="#" class="btn btn-primary">View Offer 1</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer">
+                    <img src="offer2.jpg" alt="Special Offer 2" class="img-fluid">
+                    <p><a href="#" class="btn btn-primary">View Offer 2</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more offers as needed -->
+        <p><a href="#offers" class="btn btn-primary">View All Offers</a></p>
+    </section>
+
+    <section class="container">
+        <h2>What Our Users Say</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"This trip planner made our vacation unforgettable! The recommendations were spot on."</p>
+                    <p>- John Doe</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"Easy to use and helped us discover hidden gems in every city we visited."</p>
+                    <p>- Jane Smith</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section class="container">
+        <h2>Latest Blog Posts</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <h3><a href="#">10 Must-Visit Beaches Around the World</a></h3>
+                    <p>Explore the most beautiful beaches and plan your next seaside getaway.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <h3><a href="#">A Food Lover's Guide to Local Cuisines</a></h3>
+                    <p>Discover the flavors of different cultures through their delicious cuisines.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more blog posts as needed -->
+        <p><a href="#blog" class="btn btn-primary">Read More Blog Posts</a></p>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2023 Your Trip Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
